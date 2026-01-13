@@ -1,0 +1,134 @@
+/*========================================================================================================================*/
+/*================================================guia-estil.html ========================================================*/
+/*========================================================================================================================*/
+
+/* Estilos básicos del cuerpo de la página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f2f2ff;
+    margin: 0;
+}
+
+
+/* ===== CONTENEDOR ===== */
+/* Caja que contiene todo el contenido centrado */
+.estilo-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 15px;
+}
+
+
+/* ===== TARJETAS ===== */
+/* Caja blanca tipo "card" para separar secciones */
+.card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+/* Títulos dentro de las tarjetas */
+.card h2 {
+    margin-bottom: 10px;
+}
+/* Texto de introducción con color más suave */
+.intro {
+    color: #555;
+}
+
+/* ===== TIPOGRAFÍA ===== */
+/* Estilos para diferentes tipos de títulos de prueba */
+.demo-h1 { 
+    font-family: 'Montserrat'; /* Fuente específica para los títulos */
+    font-size: 2rem; /* Tamaño grande */
+    font-weight: 700; /* Más grueso */
+}
+.demo-h2 { 
+    font-family: 'Montserrat'; 
+    font-size: 1.6rem; /* Un poco más pequeño */
+    font-weight: 600; 
+}
+.demo-h3 { 
+    font-family: 'Montserrat'; 
+    font-size: 1.25rem; /* Más pequeño aún */
+    font-weight: 400; /* Más delgado */
+}
+/* Texto normal de ejemplo */
+.demo-text {
+    margin-top: 10px; /* Separación superior */
+    color: #444; /* Tonalidad gris para lectura suave */
+}
+
+/* ===== ICONO TEXTO ===== */
+/* Contenedor para alinear icono + texto */
+.baseline-demo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+/* Estilo del icono rojo */
+.baseline-icon {
+    font-size: 28px;
+    color: #e63946;
+}
+
+/* ===== ESCALA ===== */
+/* Clases listas para usar en cualquier texto */
+.t-xxs { font-size: 0.75rem; } /* Muy pequeño */
+.t-xs  { font-size: 0.875rem; } /* Pequeño */
+.t-base { font-size: 1rem; } /* Normal */
+.t-lg  { font-size: 1.25rem; } /* Grande */
+.t-xl  { font-size: 1.5rem; } /* Muy grande */
+
+/* ===== BOTONES ===== */
+/* Botón con icono dentro */
+.btn-icon {
+    padding: 12px 20px;
+    background: #6a4df5;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+/* Efecto hover cuando pasas el ratón */
+.btn-icon:hover {
+    background: #533ed1;
+}
+/* Enlaces con icono */
+.link-icon {
+    display: inline-flex;
+    align-items: center;
+    color: #6a4df5;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+/* Hover para los enlaces */
+.link-icon:hover {
+    text-decoration: underline;
+}
+
+/* ===== TABLA COLORES ===== */
+/* Tabla básica */
+
+.tabla-colores {
+    width: 100%;
+    border-collapse: collapse;
+}
+/* Celdas y cabeceras */
+
+.tabla-colores th,
+.tabla-colores td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+/* Cabecera de la tabla */
+
+.tabla-colores th {
+    background: #e9e7ff;
+}
