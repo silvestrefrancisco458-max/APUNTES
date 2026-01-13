@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulari De Registro</title>
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Stile.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="nav-brand">
+            <span class="logo"></span>
+            Formulari
+        </div>
+
+        <input type="checkbox" id="nav-toggle">
+
+        <label class="nav-toggle-label" for="nav-toggle">
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </label>
+
+        <nav class="nav-links">
+            <a href="Formulario.html">Formulari</a>
+            <a href="INTERACCIO.html">Interactivitat</a>
+        </nav>
+
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="container">
+
+        <h1>Formulari De Registre</h1>
+
+        <form novalidate>
+
+            <!-- NOMBRE COMPLETO -->
+            <div class="group">
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" 
+                      placeholder="Escriu el teu nom complet"
+                      pattern="^[A-Za-zÀ-ÿ\s]{3,40}$"
+                      title="Nom vàlid: només lletres i espais, mínim 3 caràcters"
+                      required>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="group">
+                <label for="email">Correu electrònic</label>
+                <input type="email" id="email" placeholder="exemple@gmail.com" required>
+            </div>
+
+            <!-- TELÈFON -->
+            <div class="group">
+                <label for="tel">Telèfon</label>
+                <input type="tel" id="tel" 
+                    placeholder="123456789"
+                    pattern="^[0-9]{9}$"
+                    title="Només 9 dígits"
+                    required>
+            </div>
+
+            <!-- EDAD -->
+            <div class="group">
+                <label for="edat">Edat</label>
+                <input type="number" id="edat" min="18" max="99" required>
+            </div>
+
+            <!-- FECHA -->
+            <div class="group">
+                <label for="naix">Data de naixement</label>
+                <input type="date" id="naix" required>
+            </div>
+
+            <!-- HORA -->
+            <div class="group">
+                <label for="hora">Franja horària preferida</label>
+                <input type="time" id="hora" required>
+            </div>
+
+            <!-- COLOR -->
+            <div class="group">
+                <label for="color">Color preferit</label>
+                <input type="color" id="color">
+            </div>
+
+            <!-- RANGE -->
+            <div class="group">
+                <label for="rng">Control lliscant</label>
+                <input type="range" id="rng" min="0" max="100" step="1">
+            </div>
+
+            <!-- CHECKBOX -->
+            <div class="group">
+                <label>Aficions</label>
+                <div class="multi">
+                    <label><input type="checkbox"> Esport</label>
+                    <label><input type="checkbox"> Música</label>
+                    <label><input type="checkbox"> Lectura</label>
+                    <label><input type="checkbox"> Videojocs</label>
+                </div>
+            </div>
+
+            <!-- RADIO -->
+            <div class="group">
+                <label>Nivell de estudis</label>
+                <div class="multi">
+                    <label><input type="radio" name="estudis" required> ESO</label>
+                    <label><input type="radio" name="estudis"> Batxillerat</label>
+                    <label><input type="radio" name="estudis"> Grau Mitjà</label>
+                    <label><input type="radio" name="estudis"> Grau Superior</label>
+                    <label><input type="radio" name="estudis"> Universitat</label>
+                </div>
+            </div>
+
+            <!-- SELECT -->
+            <div class="group">
+                <label for="pais">País</label>
+                <select id="pais" required>
+                    <option value="">-- Selecciona --</option>
+                    <option>Espanya</option>
+                    <option>França</option>
+                    <option>Alemanya</option>
+                    <option>Itàlia</option>
+                    <option>Portugal</option>
+                </select>
+            </div>
+
+            <!-- TEXTAREA -->
+            <div class="group">
+                <label for="coment">Comentaris</label>
+                <textarea id="coment" rows="4" placeholder="Escriu els teus comentaris aquí..."></textarea>
+            </div>
+
+            <!-- BOTONES -->
+            <div class="buttons">
+                <button type="submit">Enviar</button>
+                <button type="reset" class="reset">Esborrar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

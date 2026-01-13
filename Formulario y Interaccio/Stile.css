@@ -1,0 +1,519 @@
+/* =========================================================
+   RESET GENERAL
+   ========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #fafafa;
+    color: #222;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   NAVBAR SUPERIOR RESPONSIVA
+   ========================================================= */
+
+/* Contenidor barra superior */
+.navbar {
+    position: fixed;          /* Sempre visible a dalt */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #303f9f;
+    color: rgb(241, 7, 7);
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+/* Marca / Logo */
+.nav-brand {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Icona logo (punt blau) */
+.logo {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ffeb3b;
+}
+
+/* Checkbox que controla el menú (ocult) */
+#nav-toggle {
+    display: none;
+}
+
+/* Icona hamburguesa */
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 26px;
+    height: 3px;
+    margin: 5px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Enllaços del menú */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+/* Esto Cuando clicas se pone amarillo */
+.nav-links a:hover {
+    color: #ffeb3b;
+}
+
+/* ===============================
+   RESPONSIVE PER MÒBILS
+   =============================== */
+@media (max-width: 768px) {
+
+    /* Mostrar botó hamburguesa */
+    .nav-toggle-label {
+        display: block;
+    }
+
+    /* Amagar els enllaços per defecte */
+    .nav-links {
+        position: absolute;
+        top: 58px;
+        left: 0;
+        width: 100%;
+        background: #303f9f;
+        flex-direction: column;
+        display: none;
+        padding: 10px 0;
+    }
+
+    /* Mostrar el menú quan checkbox està activat */
+    #nav-toggle:checked + .nav-toggle-label + .nav-links {
+        display: flex;
+    }
+}
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+   ========================================================= */
+/*=====================*/
+/*Estilo a todo el menu*/
+/*=====================*/
+.container {
+    max-width: 900px;
+    background: white;
+    padding: 30px;
+    margin: 120px auto 40px; /* IMPORTANT → perquè no tapi la NAV */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Títol */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #303f9f;
+}
+
+/* =========================================================
+   GRUPS DE CAMP
+   ========================================================= */
+
+/*Da un espacio entre cada grupo de campos*/
+.group {
+    margin-bottom: 20px;
+}
+
+/* Etiquetes */
+/* Esto mone en netrita los titulo del formulario */
+.group label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #444;
+}
+
+/* Inputs, selects i textarea */
+/* Esto da la anchora y el espacio cada grupo */
+.group input,
+.group select,
+.group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #8905f5;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.2s;
+} 
+
+/* Per checkbox i radio */
+/* Para que se vean bien los aficions y nivel de estudis */
+.multi {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 25px;
+    margin-top: 8px;
+}
+
+/* =========================================================
+   BOTONS
+   ========================================================= */
+/* Esto pone los botones centrados */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* Esto da color al boton enviar y hace que los dos botones aumenten */
+button {
+    background: #303f9f;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+/* Esto da colot al boton Esborrar */
+.reset {
+    background: #d32f2f;
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*==========================================INTERACCIO==================================*/
+/*--------------------------------------------------------------------------------------*/
+
+/* ---------------------------------------------------
+   VARIABLES DE DISSENY
+--------------------------------------------------- */
+:root {
+    --color-bg: #f5f7fa;
+    --color-card: #ffffff;
+    --color-primary: #2563eb;    /* Blau elegant */
+    --color-primary-light: #3b82f6;
+    --color-text: #1f2937;
+    --color-border: #d1d5db;
+
+    --radius: 14px;
+    --shadow-sm: 0 2px 6px rgba(0,0,0,0.08);
+    --shadow-md: 0 8px 20px rgba(0,0,0,0.12);
+
+    --transition: 0.28s ease;
+}
+
+/* ---------------------------------------------------
+   RESET I ESTIL GLOBAL
+--------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", system-ui, sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+    padding: 24px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ---------------------------------------------------
+   NAVBAR RESPONSIVA PREMIUM
+--------------------------------------------------- */
+.navbar {
+    background: var(--color-card);
+    padding: 16px 26px;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 10px;
+    z-index: 20;
+}
+
+.nav-brand {
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 26px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 500;
+    padding: 6px 0;
+    transition: var(--transition);
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+/* Hamburguesa */
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 32px;
+    height: 3px;
+    display: block;
+    background: var(--color-text);
+    margin: 6px 0;
+    transition: var(--transition);
+}
+
+/* -----------------------------
+   MODE MÒBIL
+----------------------------- */
+@media (max-width: 700px) {
+
+    .nav-toggle-label {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: var(--color-card);
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 0;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow-md);
+
+        transform: translateY(-340px);
+        opacity: 0;
+        pointer-events: none;
+        transition: var(--transition);
+    }
+
+    #nav-toggle:checked ~ .nav-links {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+/* ---------------------------------------------------
+   TARGETES / SECCIONS
+--------------------------------------------------- */
+/* Esto es un gupo y dentro de este grupo puse las pestayes */
+.card {
+    background: var(--color-card);
+    padding: 32px;
+    border-radius: var(--radius);
+    margin-bottom: 40px;
+    box-shadow: var(--shadow-md);
+}
+
+.h1 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* ---------------------------------------------------
+   TABS PRO
+--------------------------------------------------- */
+/* Esto ordena corectamente las pestayes 1, 2, 3 */
+.tabs {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+/* Esto da estilo a las pestañas */
+.tabs label {
+    padding: 10px 20px;
+    background: #e5e7eb;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+    border: 1px solid var(--color-border);
+}
+
+/* Esto Esto hace que Las pestallas se muestren correctamente */
+.tab-panel {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Esto hace que se traslade el contenido */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(6px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Activació amb :has */
+#pagina-interaccio:has(#tab1:checked) .content-1 { display: block; }
+#pagina-interaccio:has(#tab2:checked) .content-2 { display: block; }
+#pagina-interaccio:has(#tab3:checked) .content-3 { display: block; }
+
+/* Estat actiu del botó */
+#pagina-interaccio:has(#tab1:checked) label[for="tab1"],
+#pagina-interaccio:has(#tab2:checked) label[for="tab2"],
+#pagina-interaccio:has(#tab3:checked) label[for="tab3"] {
+    background: var(--color-primary);
+    color: rgb(251, 255, 0);
+    border-color: var(--color-primary);
+}
+
+/* ---------------------------------------------------
+   FORMULARI PREMIUM
+--------------------------------------------------- */
+/* Esto da espacio a cada encaselera como nombre y email */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+/* Esto coloca cada campo de entrada como nombre y email en su lugar y ordenado */
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+/* Esto ha que que donde puedas escribir que se vea mas grande */
+.input {
+    padding: 12px 14px;
+    border-radius: var(--radius);
+    border: 2px solid var(--color-border);
+    transition: var(--transition);
+    font-size: 1rem;
+}
+/* Esto da el efecto a los campos donde puede escribir le cambie el color. */
+.input:invalid {
+    border-color: #dc2626;
+    background: #0ef1663a;
+}
+/* Esto es para los mensajes de ayuda */
+.form-help {
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+/* Botó */
+/* Esto es para el boton de enviar */
+.btn {
+    width: fit-content;
+    padding: 12px 26px;
+    background: var(--color-primary);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+    box-shadow: var(--shadow-sm);
+}
+
+/* ---------------------------------------------------
+   CARRUSEL PRO
+--------------------------------------------------- */
+/* Esto Para que no se vean las pestañas al lado de la otra */
+.carousel-viewport {
+    overflow: hidden;
+    border-radius: var(--radius);
+}
+/* Esto para que las pestñas esten separadas */
+.slides {
+    display: flex;
+    width: 300%;
+    transition: transform 0.7s cubic-bezier(.4, 0, .2, 1);
+}
+/* Esto Es para cada pestayes y para que no se vea todas las pestañas juntas */
+.slide {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    background: #6198e0;
+    border-right: 1px solid var(--color-border);
+}
+
+/* Moviment amb :has */
+/* Esto Hace que se pueda trasladar entre pestañas */
+#pagina-interaccio:has(#c1:checked) .slides { transform: translateX(0%); }
+#pagina-interaccio:has(#c2:checked) .slides { transform: translateX(-33.33%); }
+#pagina-interaccio:has(#c3:checked) .slides { transform: translateX(-66.66%); }
+
+/* Dots */
+/* Esto para que se vea lo de deplasar */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 12px;
+}
+/* para darle efecto a los de deplasar con colores */
+.carousel-dots label {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #dd0e0e;
+    cursor: pointer;
+    transition: var(--transition);
+}
+/* Para que funcione las traladaccion */
+#pagina-interaccio:has(#c1:checked) label[for="c1"],
+#pagina-interaccio:has(#c2:checked) label[for="c2"],
+#pagina-interaccio:has(#c3:checked) label[for="c3"] {
+    background: var(--color-primary);
+}

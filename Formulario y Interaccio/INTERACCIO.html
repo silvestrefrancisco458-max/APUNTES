@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactivitat</title>
+    <link rel="stylesheet" href="Stile.css">
+</head>
+
+<body id="pagina-interaccio">
+<div class="container">
+
+    <!-- =======================
+         NAVBAR RESPONSIVA
+    ======================== -->
+    <header class="navbar">
+
+        <div class="nav-brand">
+            <span class="logo"></span>
+            Interacció
+        </div>
+
+        <!-- Checkbox ocult -->
+        <input type="checkbox" id="nav-toggle">
+
+        <!-- Icona hamburguesa -->
+        <label class="nav-toggle-label" for="nav-toggle">
+            <div class="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </label>
+
+        <!-- Enllaços menú -->
+        <nav class="nav-links">
+            <a href="Formulario.html">Formulari</a>
+            <a href="INTERACCIO.html">Interactivitat</a>
+        </nav>
+    </header>
+
+    <!-- ==========================
+         CONTINGUT PRINCIPAL
+    =========================== -->
+    <div class="main">
+
+        <!-- ==========================
+             PESTANYES (TABS CSS)
+        =========================== -->
+        <section class="card">
+            <h2 class="h1">Pestanyes</h2>
+
+            <!-- Inputs ocults (radio) -->
+            <input type="radio" name="tab" id="tab1" checked hidden>
+            <input type="radio" name="tab" id="tab2" hidden>
+            <input type="radio" name="tab" id="tab3" hidden>
+
+            <!-- Botons -->
+            <div class="tabs">
+                <label for="tab1">Pestanya 1</label>
+                <label for="tab2">Pestanya 2</label>
+                <label for="tab3">Pestanya 3</label>
+            </div>
+
+            <!-- CONTINGUT -->
+            <div class="tab-content">
+                <div class="tab-panel content-1">
+                    <h3 class="h2">Contingut 1</h3>
+                    <p>Aquest és el contingut de la primera pestanya.</p>
+                </div>
+
+                <div class="tab-panel content-2">
+                    <h3 class="h2">Contingut 2</h3>
+                    <p>Aquí hi ha el contingut de la segona pestanya.</p>
+                </div>
+
+                <div class="tab-panel content-3">
+                    <h3 class="h2">Contingut 3</h3>
+                    <p>Contingut de la tercera pestanya.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================
+             FORMULARI (VALIDACIÓ)
+        =========================== -->
+        <section class="card">
+            <h2 class="h1">Formulari amb validació</h2>
+
+            <form>
+                <div class="form-row">
+                    <label for="nom">Nom (obligatori)</label>
+                    <input class="input" id="nom" type="text" required minlength="2">
+                    <span class="form-help">Ha de tenir com a mínim 2 caràcters.</span>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input class="input" id="email" type="email" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="codi">Codi (format ABC-123)</label>
+                    <input class="input" id="codi" type="text" pattern="[A-Z]{3}-[0-9]{3}" required>
+                    <span class="form-help">Format: tres lletres, guió, tres números.</span>
+                </div>
+
+                <button class="btn" type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- ==========================
+        COMPONENT EXTRA: CAROUSEL
+        ========================== -->
+        <section class="card">
+            <h2 class="h1">Carrusel</h2>
+
+            <!-- Radios del carrusel -->
+            <input type="radio" name="carousel" id="c1" checked hidden>
+            <input type="radio" name="carousel" id="c2" hidden>
+            <input type="radio" name="carousel" id="c3" hidden>
+
+            <!-- Vista -->
+            <div class="carousel">
+                <div class="carousel-viewport">
+                    <div class="slides">
+
+                        <!-- SLIDE 1 -->
+                        <section class="slide">
+                            <img src="./descarga.png" alt="Un peix de colors" width="200"/>
+                            <h3 class="h2">Slide 1</h3>
+                            <p>Primer slide imagen1.</p>
+                        </section>
+
+                        <!-- SLIDE 2 -->
+                        <section class="slide">
+                            <img src="./descarga (1).png" alt="Un peix de colors" width="200"/>
+                            <h3 class="h2">Slide 2</h3>
+                            <p>Segon slide imagen2.</p>
+                        </section>
+
+                        <!-- SLIDE 3 -->
+                        <section class="slide">
+                            <img src="./imagen.png" alt="Un peix de colors" width="200"/>
+                            <h3 class="h2">Slide 3</h3>
+                            <p>Tercer slide imagen3.</p>
+                        </section>
+
+                    </div>
+                </div>
+
+                <!-- Dots -->
+                <div class="carousel-dots">
+                    <label for="c1"></label>
+                    <label for="c2"></label>
+                    <label for="c3"></label>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+</div>
+</body>
+</html> 

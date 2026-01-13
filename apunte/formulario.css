@@ -1,0 +1,218 @@
+/* === Variables globales === */
+:root {
+  --colorPrincipal: #1976d2;
+  --colorHover: #125da3;
+  --colorError: #d32f2f;
+  --colorText: #333;
+}
+
+/* === Reset y body === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  color: var(--colorText);
+}
+
+/* === Menú superior === */
+nav {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--colorText);
+  font-weight: 600;
+}
+
+nav .menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* === Formulario === */
+form.formulari {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 25px 20px;
+  width: 100%; 
+  max-width: 400px;
+}
+
+/* === Campos === */
+.camp {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.camp input,
+.camp textarea,
+.camp select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+/* Textarea mínima altura */
+.camp textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Focus: borde azul */
+.camp input:focus,
+.camp textarea:focus,
+.camp select:focus {
+  border-color: var(--colorPrincipal);
+  outline: none;
+}
+
+/* === Label flotante === */
+.floating {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-size: 16px;
+  color: #81888f;
+  background: white;
+  padding: 0 4px;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.camp:has(input:focus) .floating,
+.camp input:not(:placeholder-shown) + .floating,
+.camp:has(textarea:focus) .floating,
+.camp textarea:not(:placeholder-shown) + .floating,
+.camp select:focus + .floating {
+  top: -8px;
+  font-size: 12px;
+  color: var(--colorPrincipal);
+}
+
+.floating.fixed {
+  top: -8px;
+  font-size: 12px;
+  color: var(--colorPrincipal);
+}
+
+/* === Mensajes de error === */
+.error {
+  color: var(--colorError);
+  font-size: 13px;
+  margin-top: 5px;
+  display: none;
+}
+
+.camp input:invalid:not(:placeholder-shown):not(:focus) + .error,
+.camp textarea:invalid:not(:placeholder-shown):not(:focus) + .error,
+.camp select:invalid:not(:focus) + .error {
+  display: block;
+}
+
+.ajuda {
+  font-size: 13px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* === Checkbox y radio === */
+.grup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grup label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+/* === Botón === */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background: var(--colorPrincipal);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: var(--colorHover);
+}
+
+/* === Select simple con flecha === */
+.camp select:not([multiple]) {
+  appearance: none;
+  padding-right: 30px;
+  background-image: linear-gradient(45deg, transparent 50%, #888 50%),
+                    linear-gradient(135deg, #888 50%, transparent 50%);
+  background-position: calc(100% - 18px) calc(50% - 3px),
+                       calc(100% - 12px) calc(50% - 3px);
+  background-repeat: no-repeat;
+  background-size: 6px 6px, 6px 6px;
+}
+
+/* === Responsive para móvil === */
+@media (max-width: 500px) {
+  form.formulari, nav {
+    padding: 15px 10px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    padding: 10px;
+    gap: 10px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav .menu-toggle {
+    display: block;
+  }
+}

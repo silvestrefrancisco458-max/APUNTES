@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulari complet avançat</title>
+<link rel="stylesheet" href="formulario.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- === Menú superior === -->
+<nav>
+  <h1>Meu Formulari</h1>
+  <ul>
+    <li><a href="#">Inici</a></li>
+    <li><a href="#">Formulari</a></li>
+    <li><a href="#">Contacte</a></li>
+  </ul>
+</nav>
+
+<!-- === Formulari === -->
+<form class="formulari">
+
+<h2>Formulari complet avançat</h2>
+
+<!-- Nom d'usuari -->
+<div class="camp">
+  <input type="text" id="usuari" name="usuari" placeholder=" " required pattern="^[A-Za-z0-9]{3,12}$">
+  <label class="floating" for="usuari">Nom d'usuari</label>
+  <p class="error">Entre 3 i 12 caràcters, només lletres i números.</p>
+</div>
+
+<!-- Correu electrònic -->
+<div class="camp">
+  <input type="email" id="correu" name="correu" placeholder=" " required>
+  <label class="floating" for="correu">Correu electrònic</label>
+  <p class="error">Introdueix un correu vàlid.</p>
+</div>
+
+<!-- Contrasenya -->
+<div class="camp">
+  <input type="password" id="clau" name="clau" placeholder=" " required minlength="6">
+  <label class="floating" for="clau">Contrasenya</label>
+  <p class="error">La contrasenya ha de tenir almenys 6 caràcters.</p>
+</div>
+
+<!-- Comentaris -->
+<div class="camp">
+  <textarea id="comentaris" name="comentaris" placeholder=" "></textarea>
+  <label class="floating" for="comentaris">Comentaris</label>
+</div>
+
+<!-- Província -->
+<div class="camp">
+  <select id="provincia" name="provincia" required>
+    <option value="" disabled selected hidden>Selecciona província</option>
+    <option value="barcelona">Barcelona</option>
+    <option value="girona">Girona</option>
+    <option value="lleida">Lleida</option>
+    <option value="tarragona">Tarragona</option>
+  </select>
+  <label class="floating fixed" for="provincia">Província</label>
+</div>
+
+<!-- Checkbox aficions -->
+<div class="grup">
+  <label><input type="checkbox" name="aficions" value="musica"> 🎵 Música</label>
+  <label><input type="checkbox" name="aficions" value="esport"> ⚽ Esport</label>
+  <label><input type="checkbox" name="aficions" value="lectura"> 📚 Lectura</label>
+</div>
+
+<!-- Color preferit -->
+<div class="camp">
+  <input type="color" id="color" name="color">
+  <label class="floating fixed" for="color">Color preferit</label>
+</div>
+
+<!-- Volum (slider) -->
+<div class="camp">
+  <input type="range" id="volum" name="volum" min="0" max="100" value="50">
+  <label class="floating fixed" for="volum">Volum</label>
+</div>
+
+<!-- Barra de progrés -->
+<div class="camp">
+  <progress value="30" max="100"></progress>
+</div>
+
+<!-- Indicador de nivell -->
+<div class="camp">
+  <meter value="0.6" min="0" max="1"></meter>
+</div>
+
+<!-- Botó d'enviar -->
+<button type="submit">Enviar</button>
+
+</form>
+
+</body>
+</html>
