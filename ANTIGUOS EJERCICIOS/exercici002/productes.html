@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Productes</title>
+    <link rel="stylesheet" href="global.css">
+  </head>
+
+  <body>
+    <!-- Menú de navegación principal, fijo en la parte superior -->
+    <nav class="menu-fixed">
+      <a href="index.html">Inici</a>
+      <a href="productes.html">Productes</a>
+      <a href="contacte.html">Contacte</a>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <main>
+      <section class="filters" style="display: flex; gap: 20px; margin-bottom: 30px;">
+        <span>Tot</span> <!-- Muestra todos los productos -->
+        <span>Popular</span>
+        <span>Nou</span>
+        <span>Oferta</span>
+      </section>
+
+      <!-- Sección que muestra la cuadrícula de productos -->
+      <section class="product-grid" style="display: flex; flex-wrap: wrap; gap: 30px;">
+        <!-- Espacio reservado para la imagen del producto -->
+        <div class="product-card" style="flex: 1 1 260px; background: #eee; padding: 20px; border-radius: 8px;">
+          <div style="height: 120px; background: #ccc; border-radius: 6px;"></div>
+          <h3>Producte 1</h3> <!-- Nombre del producto -->
+          <p>€19.99</p> <!-- Precio del producto -->
+        </div>
+
+        <!-- Segunda tarjeta de producto -->
+        <div class="product-card" style="flex: 1 1 260px; background: #eee; padding: 20px; border-radius: 8px;">
+          <div style="height: 120px; background: #ccc; border-radius: 6px;"></div>
+          <h3>Producte 2</h3>
+          <p>€29.99</p>
+        </div>
+
+        <!-- Tercera tarjeta de producto -->
+        <div class="product-card" style="flex: 1 1 260px; background: #eee; padding: 20px; border-radius: 8px;">
+          <div style="height: 120px; background: #ccc; border-radius: 6px;"></div>
+          <h3>Producte 3</h3>
+          <p>€24.99</p>
+        </div>
+        <!-- Añade más productos si quieres -->
+      </section>
+    </main>
+
+    <!-- Pie de página con derechos de autor e información de contacto -->
+    <footer class="footer">
+      &copy; 2025 Nom de l'Empresa · info@empresa.com
+    </footer>
+  </body>
+</html>
