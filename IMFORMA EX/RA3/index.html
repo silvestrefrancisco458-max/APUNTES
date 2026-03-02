@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Animals de la Garrotxa</title>
+    <!-- Enllaç al fitxer CSS extern -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fons de la pàgina gestionat des de CSS -->
+
+    <header class="page-header">
+        <h1>Animals de la Garrotxa</h1>
+        <p>Fes clic a cada targeta per girar-la i veure més informació.</p>
+    </header>
+
+    <!-- Contenidor principal de totes les targetes -->
+    <main class="cards-container">
+        <!-- TARGETA 1: Daina -->
+        <!-- Checkbox ocult que controla l’estat de la targeta -->
+        <input type="checkbox" id="card-1" class="card-checkbox">
+        <!-- Label associat al checkbox: en fer clic, es canvia l’estat :checked -->
+        <label for="card-1" class="card">
+            <!-- Contenidor intern que es girarà en 3D -->
+            <div class="card-inner">
+                <!-- Cara frontal -->
+                <div class="card-face card-front">
+                    <!-- Imatge de l’animal -->
+                    <img src="./uno.png" alt="Daina" class="animal-image">
+                    <!-- Nom de l’animal a la part inferior -->
+                    <div class="card-name">Daina</div>
+                </div>
+                <!-- Cara posterior -->
+                <div class="card-face card-back">
+                    <h2>Daina</h2>
+                    <p><strong>Alimentació:</strong> Herbívor</p>
+                    <p><strong>Activitat:</strong> Diürn</p>
+                    <p><strong>Esperança de vida:</strong> 10–15 anys</p>
+                </div>
+            </div>
+        </label>
+
+        <!-- TARGETA 2: Guineu -->
+        <input type="checkbox" id="card-2" class="card-checkbox">
+        <label for="card-2" class="card">
+            <div class="card-inner">
+                <div class="card-face card-front">
+                    <img src="./uno.png" alt="Guineu" class="animal-image">
+                    <div class="card-name">Guineu</div>
+                </div>
+                <div class="card-face card-back">
+                    <h2>Guineu</h2>
+                    <p><strong>Alimentació:</strong> Carnívor (omnívor oportunista)</p>
+                    <p><strong>Activitat:</strong> Principalment nocturn</p>
+                    <p><strong>Esperança de vida:</strong> 3–6 anys en llibertat</p>
+                </div>
+            </div>
+        </label>
+
+        <!-- TARGETA 3: Mussol -->
+        <input type="checkbox" id="card-3" class="card-checkbox">
+        <label for="card-3" class="card">
+            <div class="card-inner">
+                <div class="card-face card-front">
+                    <img src="./uno.png" alt="Mussol" class="animal-image">
+                    <div class="card-name">Mussol</div>
+                </div>
+                <div class="card-face card-back">
+                    <h2>Mussol</h2>
+                    <p><strong>Alimentació:</strong> Carnívor</p>
+                    <p><strong>Activitat:</strong> Nocturn</p>
+                    <p><strong>Esperança de vida:</strong> 4–10 anys (segons espècie)</p>
+                </div>
+            </div>
+        </label>
+    </main>
+</body>
+</html>

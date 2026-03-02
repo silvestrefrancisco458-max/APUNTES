@@ -1,0 +1,167 @@
+/* ===========================
+   ESTILS GENERALS DE LA PÀGINA
+   =========================== */
+
+/* Fons amb imatge que ocupa tota la finestra */
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #ffffff;
+    min-height: 100vh;
+
+    /* Imatge de fons (canvia la ruta segons el teu fitxer) */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Filtre per enfosquir i donar protagonisme a les targetes */
+    position: relative;
+}
+
+/* Capa fosca per sobre del fons per millorar el contrast */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
+
+/* Capçalera de la pàgina */
+.page-header {
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.page-header p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+/* ===========================
+   CONTENIDOR DE TARGETES
+   =========================== */
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    flex-wrap: nowrap; /* No cal responsive, es pot deixar així */
+}
+
+/* Ocultem els checkbox però mantenim la funcionalitat */
+.card-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* ===========================
+   TARGETA BÀSICA
+   =========================== */
+
+.card {
+    /* El label actua com a targeta clicable */
+    width: 260px;
+    height: 360px;
+    cursor: pointer;
+    perspective: 1000px; /* Necessari per al gir 3D */
+}
+
+/* Contenidor intern que es girarà */
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d; /* Manté les dues cares en 3D */
+    transition: transform 0.8s ease; /* Animació fluida del gir */
+}
+
+/* Cara de la targeta (frontal i posterior) */
+.card-face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden; /* Amaga la cara posterior quan està girada */
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Cara frontal: imatge + nom */
+.card-front {
+    background: rgba(20, 40, 20, 0.85);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imatge de l’animal */
+.animal-image {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+/* Banda inferior amb el nom de l’animal */
+.card-name {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #4caf50, #2e7d32);
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+/* Cara posterior: informació de l’animal */
+.card-back {
+    background: rgba(15, 30, 50, 0.9);
+    transform: rotateY(180deg); /* Comença girada */
+    padding: 1.5rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.card-back h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.card-back p {
+    margin: 0.4rem 0;
+}
+
+/* ===========================
+   CONTROL DEL GIR AMB :CHECKED
+   =========================== */
+
+/* Quan el checkbox està marcat, girem el .card-inner 180 graus */
+#card-1:checked + .card .card-inner,
+#card-2:checked + .card .card-inner,
+#card-3:checked + .card .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Petita millora visual en passar el ratolí per sobre de la targeta */
+.card:hover .card-inner {
+    transform: translateY(-4px) scale(1.02);
+}
+
+/* Si està checked i fem hover, mantenim el gir però afegim lleuger moviment */
+#card-1:checked + .card:hover .card-inner,
+#card-2:checked + .card:hover .card-inner,
+#card-3:checked + .card:hover .card-inner {
+    transform: rotateY(180deg) translateY(-4px) scale(1.02);
+}

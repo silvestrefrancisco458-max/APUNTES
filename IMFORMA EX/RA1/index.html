@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ca">
+  <head>
+    <!-- El 'utf8' esta mal escrito debe ser con un '-'
+     'utf-8' -->
+    <meta charset="utf-8">
+    <title>Parc Aventura</title>
+    <!-- hay que ponerlo para mobil-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <header>
+      <h1>Parc Aventura</h1>
+
+      <nav>
+        <!-- En realidad, #inici significa 
+         “ve a l’element amb id="inici" dins 
+         la mateixa pàgina”. O sea, sí debe 
+         llevar # -->
+        <a href="#inici">Inici</a>
+        <a href="#atraccions">Atraccions</a>
+        <a href="#horaris">Horaris</a>
+        <a href="#contacte">Contacte</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inici">
+        <!-- La primera linea da error porque
+         El 'href' no debe estar hay lo que debe
+         estar es el 'src' -->
+        <img src="./img.png" alt="Portada" width="50%">
+      </section>
+
+      <section id="atraccions">
+        <h2>Atraccions</h2>
+        <ul>
+          <li>Muntanya Rusa</li>
+          <li>Casa del terror</li>
+          <li>Aigua Splash!</li>
+        </ul>
+      </section>
+
+      <section id="horaris">
+        <h2>Horaris</h2>
+        <p>Obert cada dia de 10:00 a 20:00.</p>
+      </section>
+
+      <section id="contacte">
+        <h2>Contacte</h2>
+        <!-- No se debe de utilizar 'src' en el correo
+         se debe utilizar 'href'. Si no ponemos
+         mailto la pagina web piensa que es un URL -->
+       <!--  <p>Correu: <a href="mailto:info@parcaventura.cat">info@parcaventura.cat</a></p> -->
+         <a href="mailto:info@parcaventura.cat">info@parcaventura.cat</a>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,197 @@
+/* Estils generals del document */
+* { /* Selector universal per a tots els elements */
+    box-sizing: border-box; /* Inclou padding i border dins de l’ample/alt */
+    margin: 0; /* Elimina marges per defecte */
+    padding: 0; /* Elimina padding per defecte */
+}
+
+/* Tipografia i cos general */
+body { /* Estils del cos de la pàgina */
+    font-family: Arial, Helvetica, sans-serif; /* Tipografia llegible i comuna */
+    line-height: 1.5; /* Espaiat entre línies per millorar la lectura */
+    color: #222; /* Color de text principal, neutre i fosc */
+    background-color: #f5f5f5; /* Color de fons clar i neutre */
+}
+
+/* ------------------------------ */ 
+/* CABECERA Y NAVEGACIÓN */ 
+/* ------------------------------ */
+
+/* Capçalera i títols */
+header { /* Contenidor de la capçalera */
+    background-color: #ffffff; /* Fons blanc per al header */
+    padding: 1.2rem 1rem; /* Espai intern al voltant del contingut */
+    border-bottom: 1px solid #e0e0e0; /* Línia subtil a la part inferior */
+    position: sticky; /* Fa que el header quedi enganxat a la part superior */
+    top: 0; /* Posició enganxada a 0 píxels de la part superior */
+    z-index: 1000; /* Assegura que el header quedi per sobre d’altres elements */
+}
+
+/* Títol principal dins del header */
+header h1 { /* Estil del títol principal */
+    font-size: 1.6rem; /* Mida de lletra moderada */
+    font-weight: 600;
+    margin-bottom: 0.8rem; /* Espai inferior respecte al menú */
+    color: #111;
+}
+
+/* Navegació principal */
+.main-nav ul { /* Llista del menú de navegació */
+    list-style: none; /* Elimina els punts de la llista */
+    display: flex; /* Usa Flexbox per col·locar els elements en línia */
+    gap: 1rem; /* Espai horitzontal entre elements de la llista */
+    flex-wrap: wrap; /* Permet que els elements baixin de línia en pantalles petites */
+}
+
+/* Elements de la llista del menú */
+.main-nav li { /* Cada element de la llista del menú */
+    display: flex;
+    align-items: center;
+}
+
+/* Enllaços del menú */
+.main-nav a { /* Estil dels enllaços de navegació */
+    text-decoration: none; /* Elimina el subratllat per defecte */
+    color: #333; /* Color de text neutre fosc */
+    padding: 0.5rem 0.9rem; /* Espai intern per fer-los clicables i còmodes */
+    border-radius: 6px; /* Cantonades lleugerament arrodonides */
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease; /* Transició suau en hover */
+}
+
+/* Pseudo-classe :hover per al menú (requisit) */
+.main-nav a:hover { /* Estil quan el ratolí passa per sobre de l’enllaç */
+    background-color: #333; /* Fons fosc en hover */
+    color: #fff; /* Text blanc en hover per contrast */
+}
+
+/* ------------------------------ */
+/* CONTENIDO PRINCIPAL            */
+/* ------------------------------ */
+
+/* Contingut principal */
+main { /* Contenidor principal del contingut */
+    max-width: 1200px; /* Amplada màxima per no ocupar tota la pantalla en monitors grans */
+    margin: 1rem auto; /* Centra el main horitzontalment i afegeix marge vertical */
+    padding: 0 1rem; /* Espai lateral intern */
+}
+
+/* Títols de secció */
+.section-antigues h2,
+.section-modernes h2 { /* Títols de les seccions de meravelles */
+    font-size: 1.4rem; /* Mida de lletra dels títols de secció */
+    margin-bottom: 1rem; /* Espai inferior respecte a les targetes */
+}
+
+/* ------------------------------ */ 
+/* TARJETAS (CARDS)               */ 
+/* ------------------------------ */
+
+/* Targetes generals (aplicades a antigues i modernes) */
+.card { /* Estil comú per a totes les targetes */
+    background-color: #ffffff; /* Fons blanc per destacar sobre el fons gris */
+    border-radius: 10px; /* Cantonades arrodonides */
+    padding: 1rem; /* Espai intern */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* Ombra suau per efecte de targeta */
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex; /* Flexbox per organitzar contingut intern */
+    flex-direction: column; /* Col·loca els elements en columna */
+    gap: 0.6rem; /* Espai vertical entre elements dins la targeta */
+}
+
+.card:hover { 
+    transform: translateY(-4px); 
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12); 
+}
+
+/* Imatges dins de les targetes */
+.card img { /* Estil de les imatges de les targetes */
+    width: 100%; /* Imatge ocupa tota l’amplada de la targeta */
+    height: auto; /* Manté la proporció original de la imatge */
+    border-radius: 8px; /* Cantonades lleugerament arrodonides */
+}
+
+/* Títol de cada targeta */
+.card h3 { /* Nom de la meravella */
+    font-size: 1.1rem; /* Mida de lletra una mica més gran que el text normal */
+}
+
+/* Text dins de les targetes */
+.card p { /* Paràgrafs de la targeta */
+    font-size: 0.95rem; /* Mida de lletra lleugerament reduïda */
+}
+
+/* ------------------------------ */ 
+/* FLEXBOX PARA ANTIGUES          */ 
+/* ------------------------------ */
+
+/* CONTENIDOR FLEX PER A ANTIGUES */
+.cards-antigues { /* Contenidor de targetes de meravelles antigues */
+    display: flex; /* Usa Flexbox per a la maquetació */
+    flex-wrap: wrap; /* Permet que les targetes baixin de línia */
+    gap: 1rem; /* Espai entre targetes */
+}
+
+/* Per defecte (mòbil) les targetes ocupen tota l’amplada */
+.cards-antigues .card { /* Targetes dins del contenidor de antigues */
+    flex: 1 1 100%; /* Ocupen el 100% de l’amplada en pantalles petites */
+}
+
+/* ------------------------------ */ 
+/* GRID PARA MODERNES             */ 
+/* ------------------------------ */
+
+/* CONTENIDOR GRID PER A MODERNES */
+.grid-modernes { /* Contenidor de targetes de meravelles modernes */
+    display: grid; /* Usa CSS Grid per a la maquetació */
+    grid-template-columns: 1fr; /* Per defecte (mòbil), una sola columna */
+    gap: 1.2rem; /* Espai entre targetes */
+}
+
+/* ------------------------------ */ 
+/* FOOTER                         */ 
+/* ------------------------------ */
+
+/* Peu de pàgina comú */
+footer { 
+    background: #ffffff; 
+    text-align: center; 
+    padding: 1.5rem 1rem; 
+    border-top: 1px solid #e0e0e0; 
+    margin-top: 3rem; 
+    font-size: 0.9rem; 
+    color: #555; 
+}
+
+/* ------------------------------ */ 
+/* RESPONSIVE                     */ 
+/* ------------------------------ */
+
+/* RESPONSIVE: pantalles mitjanes (tauletes) */
+@media (min-width: 600px) { /* Regles aplicades a partir de 600px d’amplada */
+    .cards-antigues .card { /* Targetes d’antigues en pantalles mitjanes */
+        flex: 1 1 calc(50% - 1.2rem); /* Aproximadament 2 columnes (50% menys el gap) */
+    }
+
+    .grid-modernes { /* Grid de modernes en pantalles mitjanes */
+        grid-template-columns: repeat(2, 1fr); /* 2 columnes per a tauletes */
+    }
+}
+
+/* RESPONSIVE: pantalles grans (escriptori) */
+@media (min-width: 900px) { /* Regles aplicades a partir de 900px d’amplada */
+    .cards-antigues .card { /* Targetes d’antigues en escriptori */
+        flex: 1 1 calc(33.333% - 1.2rem); /* Aproximadament 3 columnes */
+    }
+
+    .grid-modernes { /* Grid de modernes en escriptori */
+        grid-template-columns: repeat(3, 1fr); /* 3 columnes (pots canviar a 4 si vols) */
+    }
+}
+
+/* OPCIONAL: més columnes per a modernes en pantalles molt grans */
+@media (min-width: 1200px) { /* Regles per a pantalles molt amples */
+    .grid-modernes { /* Grid de modernes */
+        grid-template-columns: repeat(4, 1fr); /* 4 columnes en escriptori gran */
+    }
+}

@@ -1,0 +1,72 @@
+[
+    {"id": 1, "nom": "Gran Piràmide de Giza", 
+     "tipus": "antiga", "ciutat": "Giza", 
+     "cultura": "Egípcia", "any": -2560, 
+     "arxiu": "./antic-piramidaguiza.png"
+    },
+    {"id": 2, "nom": "Jardins Penjants de Babilònia", 
+     "tipus": "antiga", "ciutat": "Babilònia", 
+     "cultura": "Mesopotàmica", "any": -600, 
+     "arxiu": "./antic-jardinsbabilonia.png"
+    },
+    {"id": 3, "nom": "Temple d’Artemis a Efes", 
+     "tipus": "antiga", "ciutat": "Efes", 
+     "cultura": "Grega", "any": -550, 
+     "arxiu": "./antic-templeartemis.png"
+    },
+    {"id": 4, "nom": "Estàtua de Zeus a Olímpia", 
+     "tipus": "antiga", "ciutat": "Olímpia", 
+     "cultura": "Grega", "any": -435, 
+     "arxiu": "./antic-estatuazeus.png"
+    },
+    {"id": 5, "nom": "Colós de Rodes", 
+     "tipus": "antiga", "ciutat": "Rodes", 
+     "cultura": "Grega", "any": -280, 
+     "arxiu": "./antic-colosrodes.png"
+    },
+    {"id": 6, "nom": "Far d’Alexandria", 
+     "tipus": "antiga", "ciutat": "Alexandria", 
+     "cultura": "Egípcia hel·lenística", "any": -300, 
+     "arxiu": "./antic-faralexandria.png"
+    },
+    {"id": 7, "nom": "Tomba de Mausol a Halicarnàs", 
+     "tipus": "antiga", "ciutat": "Halicarnàs", 
+     "cultura": "Cari", "any": -351, 
+     "arxiu": "./antic-tombamausol.png"
+    },
+    {"id": 8, "nom": "Gran Muralla Xinesa", 
+     "tipus": "moderna", "ciutat": "Pequín", 
+     "cultura": "Xinesa", "any": -700, 
+     "arxiu": "./modern-murallaxinesa.png"
+    },
+    {"id": 9, "nom": "Ciutat de Petra", 
+     "tipus": "moderna", "ciutat": "Petra", 
+     "cultura": "Nabateu", "any": 100, 
+     "arxiu": "./modern-petra.png"
+    },
+    {"id": 10, "nom": "Crist Redemptor (Brasil)", 
+     "tipus": "moderna", "ciutat": "Rio de Janeiro", 
+     "cultura": "Cristiana/Brasilera", "any": 1931, 
+     "arxiu": "./modern-cristredemptor.png"
+    },
+    {"id": 11, "nom": "Machu Picchu (Perú)", 
+     "tipus": "moderna", "ciutat": "Machu Picchu", 
+     "cultura": "Inca", "any": 1450, 
+     "arxiu": "./modern-machupicchu.png"
+    },
+    {"id": 12, "nom": "Chichén Itzá (Mèxic)", 
+     "tipus": "moderna", "ciutat": "Chichén Itzá", 
+     "cultura": "Maia", "any": 600, 
+     "arxiu": "./modern-chichenitza.png"
+    },
+    {"id": 13, "nom": "Coliseu de Roma", 
+     "tipus": "moderna", "ciutat": "Roma", 
+     "cultura": "Romana", "any": 80, 
+     "arxiu": "./modern-coliseuroma.png"
+    },
+    {"id": 14, "nom": "Taj Mahal", 
+     "tipus": "moderna", "ciutat": "Agra", 
+     "cultura": "Mogol", "any": 1653, 
+     "arxiu": "./modern-tajmahal.png"
+    }
+]
