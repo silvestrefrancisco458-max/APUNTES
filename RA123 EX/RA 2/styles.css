@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(42, 136, 165);
+}
+
+/*classics*/
+
+.section-tarjetas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem;
+    color: white;
+}
+
+
+.contenedor-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem 3rem;
+    justify-content: center;
+    padding: 3rem;
+
+}
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow:10px 10px 20px rgb(19, 61, 73);
+    border-radius: 15px;
+    gap:0.5rem;
+    
+}
+.tarjeta img{
+    width: 100%;
+    height: auto;
+}
+
+.texto-tarjeta{
+    padding: 1rem;
+   
+}
+
+
+/*vintage*/
+
+
+.section-tarjetas2{  
+    padding: 4rem;
+    color: rgb(0, 0, 0);
+}
+
+.contenedor-tarjetas-vintage{
+    position: relative;
+    width: 850%;
+    height: 1500px;
+    margin: 0 auto;
+}
+
+
+.tarjeta2{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    gap:0.5rem;
+}
+
+.cotxe0{
+    top: 0;
+    left: 0;
+}
+
+.cotxe1{
+    top: 0;
+    left: 400px;
+}
+
+.cotxe2{
+    top: 28rem;
+    left: 0;
+}
+
+.cotxe3{
+    top: 28rem;
+    left: 400px;
+}
+
+.cotxe4{
+    top: 56rem;
+    left: 0;
+}
+
+.cotxe5{
+    top: 56rem;
+    right: 400px;
+}
+
+.cotxe6{
+    top: 84rem;
+    left: 0;
+}
