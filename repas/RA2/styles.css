@@ -1,0 +1,91 @@
+/* ---------- Estil general ---------- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* ---------- Menú superior ---------- */
+nav {
+    position: sticky;
+    top: 0;
+    background: #222;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #444;
+}
+
+/* ---------- Targetes ---------- */
+.targeta {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.targeta:hover {
+    transform: scale(1.03);
+}
+
+.targeta img {
+    width: 100%;
+    max-width: 180px;
+}
+
+/* ---------- Flexbox (terrestres) ---------- */
+.contenidor-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+/* ---------- Grid (alades) ---------- */
+.contenidor-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Responsive Grid */
+@media (min-width: 600px) {
+    .contenidor-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .contenidor-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ---------- Peu de pàgina ---------- */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #ddd;
+    margin-top: 2rem;
+}
