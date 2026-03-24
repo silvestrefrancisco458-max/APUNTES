@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#6a5135"/>
+  <path d="M90 138 L230 138 L206 98 L118 98 Z" fill="#c9ad7c"/>
+  <circle cx="160" cy="78" r="28" fill="#e6c996"/>
+  <path d="M136 58 L116 34 L136 42" fill="#d9bb83"/>
+  <path d="M184 58 L204 34 L184 42" fill="#d9bb83"/>
+  <text x="160" y="184" font-size="22" text-anchor="middle" fill="#ffffff" font-family="Arial">ESFINX</text>
+</svg>

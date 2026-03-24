@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#2d5c7f"/>
+  <circle cx="160" cy="74" r="20" fill="#f3d2b5"/>
+  <path d="M148 96 C126 110, 124 140, 160 152 C196 140, 194 110, 172 96 Z" fill="#82c4d9"/>
+  <path d="M148 104 L108 82 L136 122" fill="#c8e6ef"/>
+  <path d="M172 104 L212 82 L184 122" fill="#c8e6ef"/>
+  <text x="160" y="184" font-size="22" text-anchor="middle" fill="#ffffff" font-family="Arial">SIRENA</text>
+</svg>

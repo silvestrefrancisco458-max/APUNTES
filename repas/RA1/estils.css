@@ -1,0 +1,68 @@
+/* A completar per l'alumne/a */
+/* ---------- Estil general ---------- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3f2fd; /* Blau clar */
+  color: #0d47a1; /* Blau fosc */
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Capçalera ---------- */
+header {
+  background-color: #90caf9;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* ---------- Menú de navegació ---------- */
+nav {
+  display: flex;
+  flex-direction: column; /* Vista mòbil: vertical */
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0d47a1;
+  background-color: #bbdefb;
+  padding: 0.6rem;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* ---------- Seccions ---------- */
+main {
+  padding: 1rem;
+}
+
+section {
+  background: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+/* ---------- Adaptació a pantalles grans ---------- */
+@media (min-width: 768px) {
+  nav {
+    flex-direction: row; /* En gran: horitzontal */
+    justify-content: center;
+  }
+
+  main {
+    max-width: 800px;
+    margin: 0 auto; /* Centrat */
+  }
+
+  section {
+    margin-bottom: 2rem;
+    padding: 2rem;
+  }
+}

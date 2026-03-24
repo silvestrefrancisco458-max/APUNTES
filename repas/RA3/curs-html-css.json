@@ -1,0 +1,54 @@
+{
+  "curs": "Curs de programació HTML i CSS",
+  "apartats": [
+    {
+      "titol": "1. Introducció al desenvolupament web",
+      "descripcio": "Primer contacte amb els conceptes bàsics del web i la separació entre estructura i estil.",
+      "items": [
+        "Què és una pàgina web",
+        "Estructura bàsica d'un document HTML5",
+        "Com s'enllaça un fitxer CSS extern"
+      ]
+    },
+    {
+      "titol": "2. Etiquetes HTML essencials",
+      "descripcio": "Elements fonamentals per construir contingut semàntic i ben organitzat.",
+      "items": [
+        "Capçaleres i paràgrafs",
+        "Enllaços i imatges",
+        "Llistes ordenades i desordenades",
+        "Contenidors: div, section, article i header"
+      ]
+    },
+    {
+      "titol": "3. Selectors i propietats CSS",
+      "descripcio": "Aplicació d'estils utilitzant selectors i propietats visuals bàsiques.",
+      "items": [
+        "Selectors per etiqueta, classe i id",
+        "Colors, fons i tipografies",
+        "Mides, marges i espaiat intern",
+        "Bordes i ombres"
+      ]
+    },
+    {
+      "titol": "4. Maquetació amb CSS",
+      "descripcio": "Distribució dels elements de la pàgina mitjançant tècniques modernes de layout.",
+      "items": [
+        "Model de caixa",
+        "Introducció a Flexbox"
+      ]
+    },
+    {
+      "titol": "5. Components interactius sense JavaScript",
+      "descripcio": "Ús de selectors d'estat i transicions per crear interfícies dinàmiques només amb HTML i CSS.",
+      "items": [
+        "Pseudo-classe :checked",
+        "Checkbox ocult i label associat",
+        "Efecte collapsible amb max-height",
+        "Indicadors visuals d'obert i tancat",
+        "Animacions i transicions"
+
+      ]
+    }
+  ]
+}

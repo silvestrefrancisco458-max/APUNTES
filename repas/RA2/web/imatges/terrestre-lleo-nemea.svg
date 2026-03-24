@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#5e4217"/>
+  <circle cx="160" cy="92" r="52" fill="#f1c56b"/>
+  <circle cx="160" cy="92" r="34" fill="#ddb15a"/>
+  <circle cx="132" cy="58" r="12" fill="#ddb15a"/>
+  <circle cx="188" cy="58" r="12" fill="#ddb15a"/>
+  <text x="160" y="184" font-size="20" text-anchor="middle" fill="#ffffff" font-family="Arial">LLEO DE NEMEA</text>
+</svg>

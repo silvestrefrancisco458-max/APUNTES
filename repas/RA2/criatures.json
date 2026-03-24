@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "nom": "Minotaure",
+    "grup": "terrestre",
+    "origen": "Creta",
+    "habilitat": "Força descomunal",
+    "arxiu": "terrestre-minotaure"
+  },
+  {
+    "id": 2,
+    "nom": "Cèrber",
+    "grup": "terrestre",
+    "origen": "Inframón",
+    "habilitat": "Guarda les portes d'Hades",
+    "arxiu": "terrestre-cerber"
+  },
+  {
+    "id": 3,
+    "nom": "Lleó de Nemea",
+    "grup": "terrestre",
+    "origen": "Nemea",
+    "habilitat": "Pell invulnerable",
+    "arxiu": "terrestre-lleo-nemea"
+  },
+  {
+    "id": 4,
+    "nom": "Quimera",
+    "grup": "terrestre",
+    "origen": "Lícia",
+    "habilitat": "Alè de foc",
+    "arxiu": "terrestre-quimera"
+  },
+  {
+    "id": 5,
+    "nom": "Hidra de Lerna",
+    "grup": "terrestre",
+    "origen": "Lerna",
+    "habilitat": "Caps que es regeneren",
+    "arxiu": "terrestre-hidra"
+  },
+  {
+    "id": 6,
+    "nom": "Esfinx",
+    "grup": "terrestre",
+    "origen": "Tebes",
+    "habilitat": "Enigmes mortals",
+    "arxiu": "terrestre-esfinx"
+  },
+  {
+    "id": 7,
+    "nom": "Centaure",
+    "grup": "terrestre",
+    "origen": "Tessàlia",
+    "habilitat": "Velocitat i combat amb llança",
+    "arxiu": "terrestre-centaure"
+  },
+  {
+    "id": 8,
+    "nom": "Pegàs",
+    "grup": "alada",
+    "origen": "Helicó",
+    "habilitat": "Vol veloç i elegant",
+    "arxiu": "alada-pegas"
+  },
+  {
+    "id": 9,
+    "nom": "Grifó",
+    "grup": "alada",
+    "origen": "Escítia",
+    "habilitat": "Vigila tresors sagrats",
+    "arxiu": "alada-grifo"
+  },
+  {
+    "id": 10,
+    "nom": "Harpia",
+    "grup": "alada",
+    "origen": "Illes Estròfades",
+    "habilitat": "Urpes ràpides i ferotges",
+    "arxiu": "alada-harpia"
+  },
+  {
+    "id": 11,
+    "nom": "Sirena",
+    "grup": "alada",
+    "origen": "Mar Egeu",
+    "habilitat": "Cant hipnòtic",
+    "arxiu": "alada-sirena"
+  },
+  {
+    "id": 12,
+    "nom": "Fènix",
+    "grup": "alada",
+    "origen": "Orient mític",
+    "habilitat": "Reneix de les cendres",
+    "arxiu": "alada-fenix"
+  },
+  {
+    "id": 13,
+    "nom": "Ocell d'Estímfal",
+    "grup": "alada",
+    "origen": "Arcàdia",
+    "habilitat": "Plomes metàl·liques",
+    "arxiu": "alada-estimfal"
+  },
+  {
+    "id": 14,
+    "nom": "Àguila de Zeus",
+    "grup": "alada",
+    "origen": "Olimp",
+    "habilitat": "Missatgera del llamp",
+    "arxiu": "alada-aguila-zeus"
+  }
+]

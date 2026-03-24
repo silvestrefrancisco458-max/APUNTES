@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#49392d"/>
+  <ellipse cx="160" cy="126" rx="72" ry="28" fill="#8d6544"/>
+  <rect x="132" y="82" width="56" height="42" rx="14" fill="#a47a54"/>
+  <circle cx="160" cy="58" r="20" fill="#d4b18a"/>
+  <line x1="212" y1="58" x2="246" y2="116" stroke="#d9cfb0" stroke-width="6"/>
+  <text x="160" y="184" font-size="21" text-anchor="middle" fill="#ffffff" font-family="Arial">CENTAURE</text>
+</svg>

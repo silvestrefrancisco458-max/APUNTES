@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#8c6a2b"/>
+  <ellipse cx="160" cy="122" rx="56" ry="28" fill="#d6b470"/>
+  <circle cx="126" cy="90" r="18" fill="#f1e1bf"/>
+  <path d="M112 88 L98 80 L112 100" fill="#d49e2f"/>
+  <path d="M164 92 L130 56 L146 98" fill="#edd9a6"/>
+  <path d="M176 92 L210 56 L194 98" fill="#edd9a6"/>
+  <text x="160" y="184" font-size="22" text-anchor="middle" fill="#ffffff" font-family="Arial">GRIFO</text>
+</svg>

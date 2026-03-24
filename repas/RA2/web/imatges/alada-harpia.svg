@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#4f5566"/>
+  <circle cx="160" cy="84" r="22" fill="#f0d0b4"/>
+  <path d="M150 102 C128 118, 116 140, 116 150 L204 150 C204 138, 192 118, 170 102 Z" fill="#a7b0c6"/>
+  <path d="M142 110 L96 80 L126 130" fill="#c5cbda"/>
+  <path d="M178 110 L224 80 L194 130" fill="#c5cbda"/>
+  <text x="160" y="184" font-size="22" text-anchor="middle" fill="#ffffff" font-family="Arial">HARPIA</text>
+</svg>

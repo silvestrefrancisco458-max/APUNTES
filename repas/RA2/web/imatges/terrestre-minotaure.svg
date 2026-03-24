@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#3f2d25"/>
+  <circle cx="160" cy="90" r="48" fill="#d6b07a"/>
+  <path d="M126 56 L108 30 L134 42" fill="#e2c18f"/>
+  <path d="M194 56 L212 30 L186 42" fill="#e2c18f"/>
+  <rect x="120" y="140" width="80" height="20" rx="10" fill="#8c5a34"/>
+  <text x="160" y="184" font-size="20" text-anchor="middle" fill="#ffffff" font-family="Arial">MINOTAURE</text>
+</svg>

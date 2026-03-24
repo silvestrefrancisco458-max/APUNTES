@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#4a2b26"/>
+  <path d="M92 132 C120 70, 200 70, 228 132 Z" fill="#c76b3d"/>
+  <circle cx="118" cy="86" r="20" fill="#e3b15e"/>
+  <circle cx="160" cy="72" r="18" fill="#cfcfcf"/>
+  <circle cx="202" cy="88" r="20" fill="#8fbe6f"/>
+  <text x="160" y="184" font-size="22" text-anchor="middle" fill="#ffffff" font-family="Arial">QUIMERA</text>
+</svg>
