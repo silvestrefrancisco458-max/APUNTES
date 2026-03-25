@@ -1,0 +1,27 @@
+body {
+    font-family: "Open Sans";
+    margin: 0;
+    padding: 0;
+}
+.autocenterContainer {
+    background: white;
+    margin: auto;         /* centra horitzontalment */
+    max-width: 800px;     /* amplada màxima */
+    padding: 20px;
+}
+.titleContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.titleContainer > h1 { 
+    box-sizing: border-box;
+    margin: 0;
+}
+.titleContainer > h2 { 
+    box-sizing: border-box;
+    font-weight: 100;
+    margin: 0;
+}

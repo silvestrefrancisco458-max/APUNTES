@@ -1,0 +1,67 @@
+:root{
+  --page-max: 800px;
+  --color-header: #004080;
+  --color-odd-row: #f5f9ff;
+  --color-highlight: #ffdf91;
+}
+
+*{ box-sizing: border-box; }
+
+html, body{
+  background: #fafcff;
+  color: #222;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.autocenter{
+  margin: 40px auto;
+  width: min(100% - 32px, var(--page-max));
+}
+
+/* ===== TAULA ===== */
+.taulaExemple{
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  width: 100%;
+}
+
+/* Capçalera */
+.taulaExemple thead{
+  background-color: var(--color-header);
+  color: white;
+  text-align: left;
+}
+
+.taulaExemple th,
+.taulaExemple td{
+  padding: 10px 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Primera columna */
+.taulaExemple td:first-child,
+.taulaExemple th:first-child{
+  font-weight: 600;
+  background-color: rgba(0, 64, 128, 0.05);
+}
+
+/* Files imparells */
+.taulaExemple tbody tr:nth-child(odd){
+  background-color: var(--color-odd-row);
+}
+
+/* Cel·la destacada */
+.taulaExemple td.destacada{
+  background-color: var(--color-highlight);
+  border: 2px solid #e0b000;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Efecte hover */
+.taulaExemple tbody tr:hover{
+  background-color: #eef4ff;
+}
