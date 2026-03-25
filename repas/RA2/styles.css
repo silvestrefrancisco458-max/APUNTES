@@ -1,45 +1,59 @@
-/* ---------- Estil general ---------- */
+/* -------------------- */
+/* ESTILOS GENERALES    */
+/* -------------------- */
+
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    margin: 0;
     background: #f4f4f4;
-    color: #222;
 }
 
-h1 {
+header {
+    background: #222;
+    color: white;
+    padding: 15px;
     text-align: center;
-    margin-top: 1rem;
 }
 
-/* ---------- Menú superior ---------- */
 nav {
+    background: #333;
     position: sticky;
     top: 0;
-    background: #222;
-    padding: 1rem;
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
 }
 
 nav a:hover {
-    background: #444;
+    color: #ffcc00;
 }
 
-/* ---------- Targetes ---------- */
+main {
+    padding: 20px;
+}
+
+/* -------------------- */
+/* TARJETAS COMUNES     */
+/* -------------------- */
+
 .targeta {
     background: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     text-align: center;
     transition: transform 0.2s;
 }
@@ -53,39 +67,59 @@ nav a:hover {
     max-width: 180px;
 }
 
-/* ---------- Flexbox (terrestres) ---------- */
-.contenidor-flex {
+/* -------------------- */
+/* FLEXBOX (TERRESTRES) */
+/* -------------------- */
+
+.flex-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
+    gap: 20px;
     justify-content: center;
 }
 
-/* ---------- Grid (alades) ---------- */
-.contenidor-grid {
-    display: grid;
-    gap: 1rem;
-    padding: 1rem;
+.flex-container .targeta {
+    width: 250px;
 }
 
-/* Responsive Grid */
-@media (min-width: 600px) {
-    .contenidor-grid {
+/* -------------------- */
+/* GRID (ALADES)        */
+/* -------------------- */
+
+.grid-container {
+    display: grid;
+    gap: 20px;
+}
+
+/* Móvil */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+    .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (min-width: 900px) {
-    .contenidor-grid {
-        grid-template-columns: repeat(3, 1fr);
+/* Escritorio */
+@media (min-width: 901px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
-/* ---------- Peu de pàgina ---------- */
+/* -------------------- */
+/* FOOTER               */
+/* -------------------- */
+
 footer {
+    background: #222;
+    color: white;
     text-align: center;
-    padding: 1rem;
-    background: #ddd;
-    margin-top: 2rem;
+    padding: 15px;
+    margin-top: 40px;
 }
