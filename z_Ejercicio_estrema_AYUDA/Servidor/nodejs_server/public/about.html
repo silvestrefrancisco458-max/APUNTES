@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Código Secreto — Joc de Taula</title>
+  <meta name="description" content="Código Secreto: el joc de taula d'espionatge per equips. Estratègia, deducció i diversió.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--------------------------------------------------------->
+    <!--                       Header                        -->
+    <!--------------------------------------------------------->
+    <header class="header">
+        <div class="container header__inner">
+        
+        <!-- Logo + Título -->
+        <a href="index.html" class="brand">
+            <img src="./Assets/logo_candado.png" alt="Logo Código Secreto" class="brand__logo">
+            <span class="brand__title">Codi Secret</span>
+        </a>
+
+        <!-- Checkbox ocult per controlar el menú mòbil -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox">
+
+        <!-- Menú -->
+        <nav class="nav">
+            <a href="index.html">Inici</a>
+            <a href="instrucciones.html">Instruccions</a>
+            <a href="historia.html">Història</a>
+            <a href="contacto.html">Contacte</a>
+            <a href="about.html">About</a>
+        </nav>
+
+        <!-- Botó hamburguesa (ara és un label) -->
+        <label for="nav-toggle" class="nav-toggle-label" aria-label="Obrir menú">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </label>
+        </div>
+    </header>
+
+    <!--------------------------------------------------------->
+    <!--                    Hero Section                     -->
+    <!--------------------------------------------------------->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-content">
+        <div class="hero-text">
+            <h2>About Us</h2>
+            <p>Un joc d'equips ple d'intriga: dóna pistes, 
+            endevina paraules i evita l'assassí. 
+            Estratègia i diversió garantides. Fue crea por Javier Y Francisco</p>
+            <a href="instrucciones.html" class="btn">Comença a jugar</a>
+        </div>
+        <div class="hero-image">
+            <img src="./Assets/code_name.png" alt="Joc de taula Código Secreto"loading="lazy">
+        </div>
+        </div>
+    </section>
+
+    <!--------------------------------------------------------->
+    <!--                Nombre de los creadores              -->
+    <!--------------------------------------------------------->
+    <section class="about-team">
+        <div class="container">
+            <h2>Participants</h2>
+            <ul class="team-list">
+                <li>Silvestre Ramírez Francisco Alberto</li>
+                <li>Rios Herrera Javier</li>
+            </ul>
+            <h2>Demostració del joc</h2>
+            <div class="video-frame">
+                <iframe
+                    src="https://www.youtube.com/embed/NZS-3WO2ZsQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------------------------------->
+    <!--                        FOOTER                       -->
+    <!--------------------------------------------------------->
+
+  <footer class="footer" aria-label="Peu de pàgina">
+    <div class="container footer-container">
+        <p>&copy; 2025 Código Secreto. Tots els drets reservats.</p>
+        <div class="social" aria-label="Xarxes socials">
+
+            <a href="https://x.com" target="_blank" aria-label="X (Twitter)">
+            <span class="material-symbols-outlined">share</span>
+            </a>
+
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <span class="material-symbols-outlined">photo_camera</span>
+        <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <span class="material-symbols-outlined">public</span>
+        </a>
+
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
