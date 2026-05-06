@@ -1,0 +1,39 @@
+{
+  "animals": [
+    {
+      "nom": "Rat-penat d'orelles dentades",
+      "alimentacio": "carnivor",
+      "activitat": "nocturn",
+      "esperanca_vida_anys": "15-20",
+      "habitat": "boscos i coves de la Garrotxa"
+    },
+    {
+      "nom": "Conill de bosc",
+      "alimentacio": "herbivor",
+      "activitat": "diurn",
+      "esperanca_vida_anys": "8-9",
+      "habitat": "clarianes de bosc i camps oberts"
+    },
+    {
+      "nom": "Gat salvatge",
+      "alimentacio": "carnivor",
+      "activitat": "nocturn",
+      "esperanca_vida_anys": "12-15",
+      "habitat": "boscos densos i zones rurals"
+    },
+    {
+      "nom": "Guineu pelroja",
+      "alimentacio": "omnivor",
+      "activitat": "nocturn",
+      "esperanca_vida_anys": "10-12",
+      "habitat": "boscos, camps i zones properes a nuclis humans"
+    },
+    {
+      "nom": "Senglar",
+      "alimentacio": "omnivor",
+      "activitat": "crepuscular",
+      "esperanca_vida_anys": "10-14",
+      "habitat": "boscos mediterranis, fagedes, alzinars i zones properes a camps i conreus"
+    }
+  ]
+}
