@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial;
+}
+
+.zoo{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assets/background.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+input{
+    display: none;
+}
+
+label{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+
+    position: relative;
+    top: 20px;
+    left: 20px;
+
+    margin-right: 10px;
+
+    z-index: 10;
+}
+
+.animal{
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    z-index: 5;
+}
+
+/* Dofi */
+
+.dofi{
+    width: 110px;
+    right: 100px;
+    top: 250px;
+}
+
+/* Jirafa */
+
+.jirafa{
+    width: 220px;
+    left: 120px;
+    top: 80px;
+}
+
+/* Hipopotam */
+
+.hipopotam{
+    width: 220px;
+    left: 250px;
+    bottom: 120px;
+}
+
+/* Cavall */
+
+.cavall{
+    width: 200px;
+    right: 120px;
+    bottom: 100px;
+}
+
+/* Mostrar animals */
+
+#dofi:checked + .dofi{
+    opacity: 1;
+}
+
+#jirafa:checked + .jirafa{
+    opacity: 1;
+}
+
+#hipopotam:checked + .hipopotam{
+    opacity: 1;
+}
+
+#cavall:checked + .cavall{
+    opacity: 1;
+}
