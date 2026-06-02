@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: #0d0d0d;
+    overflow: hidden;
+}
+
+.museu {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assets/museum.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Controles */
+.controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 20;
+}
+
+input {
+    display: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    border: 2px solid #555;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #444;
+    border-color: #00ffcc;
+}
+
+/* Animals */
+.animal {
+    position: absolute;
+    opacity: 0;
+    transform: scale(0.6);
+    transition: 0.8s;
+    filter: drop-shadow(0 0 10px #00ffcc);
+}
+
+/* Posicions */
+.trex {
+    width: 300px;
+    left: 100px;
+    bottom: 50px;
+}
+
+.mamut {
+    width: 320px;
+    right: 120px;
+    bottom: 60px;
+}
+
+.raptor {
+    width: 220px;
+    left: 350px;
+    top: 120px;
+}
+
+.pterodactil {
+    width: 260px;
+    right: 300px;
+    top: 80px;
+}
+
+/* Mostrar */
+#trex:checked ~ .trex,
+#mamut:checked ~ .mamut,
+#raptor:checked ~ .raptor,
+#pterodactil:checked ~ .pterodactil {
+    opacity: 1;
+    transform: scale(1);
+}

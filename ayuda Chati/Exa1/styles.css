@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial;
+}
+
+.parc {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("assets/forest.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/* Ocultar inputs */
+input {
+    display: none;
+}
+
+/* Botones */
+label {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 2px solid black;
+    cursor: pointer;
+    margin-right: 10px;
+
+    position: relative;
+    top: 20px;
+    left: 20px;
+
+    z-index: 10;
+    transition: 0.3s;
+}
+
+label:hover {
+    background-color: #d0ffd0;
+}
+
+/* Elements del parc */
+.element {
+    position: absolute;
+    opacity: 0;
+    transition: 1s;
+    z-index: 5;
+    transform: scale(0.5);
+}
+
+/* Posicions */
+.llop {
+    width: 180px;
+    left: 100px;
+    bottom: 80px;
+}
+
+.os {
+    width: 200px;
+    right: 120px;
+    bottom: 100px;
+}
+
+.arbre {
+    width: 250px;
+    left: 300px;
+    top: 50px;
+}
+
+.flor {
+    width: 120px;
+    right: 300px;
+    top: 120px;
+}
+
+/* Mostrar elements */
+#llop:checked + .llop,
+#os:checked + .os,
+#arbre:checked + .arbre,
+#flor:checked + .flor {
+    opacity: 1;
+    transform: scale(1);
+}
