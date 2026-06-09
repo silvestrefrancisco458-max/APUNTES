@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barra de Carga Única</title>
+  <style>
+    body {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* El contenedor gris de la barra */
+    .barra-contenedor {
+      background-color: #333;
+      border-radius: 10px;
+      height: 20px;
+      padding: 3px;
+      width: 300px;
+    }
+
+    /* El relleno que se va a animar */
+    .barra-relleno {
+      background-color: #3498db;
+      border-radius: 8px;
+      height: 100%;
+      width: 0%; /* Empieza vacía */
+      
+      /* LLAMADA A LA ANIMACIÓN:
+         Nombre: llenar | Duración: 3s | Ritmo: ease-out | Se queda rellena al final (both) */
+      animation: llenar 3s ease-out both;
+    }
+
+    /* --- LÍNEA DE TIEMPO DEL EXAMEN --- */
+    @keyframes llenar {
+      0% {
+        width: 0%;
+        background-color: #e74c3c; /* Empieza en rojo */
+      }
+      50% {
+        background-color: #f1c40f; /* A la mitad se vuelve amarilla */
+      }
+      100% {
+        width: 100%;
+        background-color: #2ecc71; /* Termina en verde y al 100% */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="barra-contenedor">
+    <div class="barra-relleno"></div>
+  </div>
+
+</body>
+</html>

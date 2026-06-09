@@ -1,0 +1,35 @@
+body {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    /* Estilo del círculo base */
+    .luz {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      
+      /* LLAMADA A LA ANIMACIÓN: 
+         Nombre: cambiarColor | Duración: 4 segundos | Ritmo: constante (linear) | Bucle: infinito */
+      animation: cambiarColor 4s linear infinite;
+    }
+
+    /* --- LÍNEA DE TIEMPO (FASES DEL EXAMEN) --- */
+    @keyframes cambiarColor {
+      0%, 100% {
+        background-color: #2ecc71; /* Verde al empezar y terminar */
+        transform: translateY(0);
+      }
+      33% {
+        background-color: #f1c40f; /* Cambia a Amarillo */
+        transform: translateY(-20px); /* Sube un poco */
+      }
+      66% {
+        background-color: #e74c3c; /* Cambia a Rojo */
+        transform: translateY(20px);  /* Baja un poco */
+      }
+    }

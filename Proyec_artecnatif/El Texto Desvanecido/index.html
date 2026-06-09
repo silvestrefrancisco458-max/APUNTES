@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aparición Suave de Texto</title>
+  <style>
+    body {
+      background-color: #2c3e50;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .texto-animado {
+      font-size: 2rem;
+      font-weight: bold;
+      
+      /* LLAMADA A LA ANIMACIÓN: 
+         Nombre: aparecerSubir | Duración: 1.5s | Ritmo: ease-in-out */
+      animation: aparecerSubir 1.5s ease-in-out both;
+    }
+
+    /* --- LÍNEA DE TIEMPO --- */
+    @keyframes aparecerSubir {
+      0% {
+        opacity: 0;
+        transform: translateY(30px); /* Empieza 30px más abajo */
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);    /* Sube a su posición original */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="texto-animado">¡Bienvenido al Examen!</h1>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+      background-color: #eef2f3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .caja-pregunta {
+      background-color: white;
+      border-left: 5px solid #3498db;
+      padding: 20px;
+      width: 350px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+    h3 {
+      margin: 0;
+      color: #333;
+      cursor: pointer;
+    }
+
+    /* El texto que inicialmente está oculto */
+    .respuesta-oculta {
+      color: #666;
+      margin-top: 0px;
+      
+      /* ESTADO INICIAL: Escondido */
+      height: 0px;
+      opacity: 0;
+      overflow: hidden;
+
+      /* Transición doble: cambia tamaño y opacidad a velocidades diferentes */
+      transition: height 0.3s ease, opacity 0.5s ease, margin-top 0.3s ease;
+    }
+
+    /* --- EFECTO HOVER --- */
+    /* Cuando el usuario pasa el ratón por la caja, mostramos el contenido */
+    .caja-pregunta:hover .respuesta-oculta {
+      height: 40px; /* Le damos la altura real del texto */
+      opacity: 1;   /* Lo hacemos visible */
+      margin-top: 10px;
+    }

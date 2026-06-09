@@ -1,0 +1,42 @@
+body {
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    /* El fondo del interruptor (Caja contenedora) */
+    .switch-bg {
+      background-color: #ccc;
+      border-radius: 30px;
+      cursor: pointer;
+      height: 40px;
+      padding: 5px;
+      width: 80px;
+      /* Transición para que el fondo cambie suave de color */
+      transition: background-color 0.4s ease;
+    }
+
+    /* La bolita interna que se va a mover */
+    .switch-circle {
+      background-color: white;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      /* Transición para que ruede y se desplace a la vez */
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* --- EL TRUCO DEL EXAMEN (:hover combinando elementos) --- */
+    /* Cuando pasamos el ratón por el fondo, este cambia a verde */
+    .switch-bg:hover {
+      background-color: #4cd964;
+    }
+
+    /* Cuando pasamos el ratón por el fondo, la bolita interna se mueve a la derecha */
+    .switch-bg:hover .switch-circle {
+      transform: translateX(40px) rotate(360deg);
+    }

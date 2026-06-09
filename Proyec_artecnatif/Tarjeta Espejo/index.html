@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Efecto Capa Espejo</title>
+  <style>
+    body {
+      background-color: #dff9fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    /* La tarjeta base */
+    .tarjeta {
+      background-color: #130cb7;
+      border-radius: 10px;
+      height: 150px;
+      position: relative;
+      width: 250px;
+      cursor: pointer;
+    }
+
+    /* Una capa interna que tapa la tarjeta */
+    .capa-oscura {
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 1.2rem;
+      
+      /* ESTADO INICIAL: Totalmente visible */
+      opacity: 1;
+      
+      /* Transición para que desaparezca suavemente */
+      transition: opacity 0.5s ease;
+    }
+
+    /* --- EL TRUCO DEL EXAMEN --- */
+    /* Cuando pasamos el ratón por la TARJETA, la CAPA OSCURA se vuelve invisible */
+    .tarjeta:hover .capa-oscura {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="tarjeta">
+    <div class="capa-oscura">Pasa el ratón aquí</div>
+  </div>
+
+</body>
+</html>
