@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "notebook.lineNumbers": "on",
+    "files.encoding": "utf8",
+    "java.inlayHints.parameterNames.enabled": "none",
+    "workbench.editorAssociations": {   
+        "*.md": "vscode.markdown.preview.editor",
+    },
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "livePreview.defaultPreviewPath": "/02-Web/11-CSSAvancat/exemple-01/index.html"
+}

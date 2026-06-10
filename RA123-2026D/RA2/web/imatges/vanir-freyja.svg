@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#8b5478"/>
+  <circle cx="160" cy="74" r="24" fill="#f1d0b7"/>
+  <path d="M126 144 C132 110, 188 110, 194 144 Z" fill="#d08eb6"/>
+  <circle cx="128" cy="48" r="8" fill="#f1d37b"/>
+  <circle cx="192" cy="48" r="8" fill="#f1d37b"/>
+  <text x="160" y="184" text-anchor="middle" fill="#ffffff" font-size="22" font-family="Arial">FREYJA</text>
+</svg>

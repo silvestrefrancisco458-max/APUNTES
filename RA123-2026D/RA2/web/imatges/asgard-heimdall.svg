@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#32526b"/>
+  <circle cx="160" cy="76" r="24" fill="#e6c7a8"/>
+  <rect x="132" y="102" width="56" height="44" rx="14" fill="#d7c27b"/>
+  <path d="M212 72 L228 88 L212 104" stroke="#f3d38a" stroke-width="8" fill="none"/>
+  <text x="160" y="184" text-anchor="middle" fill="#ffffff" font-size="21" font-family="Arial">HEIMDALL</text>
+</svg>

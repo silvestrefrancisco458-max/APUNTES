@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#6c4f7c"/>
+  <circle cx="160" cy="76" r="24" fill="#e7c8ae"/>
+  <path d="M126 144 C132 110, 188 110, 194 144 Z" fill="#9d77b2"/>
+  <line x1="216" y1="86" x2="240" y2="140" stroke="#f1ecd2" stroke-width="6"/>
+  <text x="160" y="184" text-anchor="middle" fill="#ffffff" font-size="22" font-family="Arial">KVASIR</text>
+</svg>

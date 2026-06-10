@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "nom": "Odin",
+    "grup": "asgard",
+    "residencia": "Valaskjalf",
+    "domini": "Saviesa i guerra",
+    "arxiu": "asgard-odin"
+  },
+  {
+    "id": 2,
+    "nom": "Thor",
+    "grup": "asgard",
+    "residencia": "Bilskirnir",
+    "domini": "Tro i protecció",
+    "arxiu": "asgard-thor"
+  },
+  {
+    "id": 3,
+    "nom": "Frigg",
+    "grup": "asgard",
+    "residencia": "Fensalir",
+    "domini": "Llar i visió del destí",
+    "arxiu": "asgard-frigg"
+  },
+  {
+    "id": 4,
+    "nom": "Balder",
+    "grup": "asgard",
+    "residencia": "Breidablik",
+    "domini": "Llum i puresa",
+    "arxiu": "asgard-balder"
+  },
+  {
+    "id": 5,
+    "nom": "Tyr",
+    "grup": "asgard",
+    "residencia": "Asgard",
+    "domini": "Justícia i combat",
+    "arxiu": "asgard-tyr"
+  },
+  {
+    "id": 6,
+    "nom": "Heimdall",
+    "grup": "asgard",
+    "residencia": "Himinbjorg",
+    "domini": "Vigilància del pont Bifrost",
+    "arxiu": "asgard-heimdall"
+  },
+  {
+    "id": 7,
+    "nom": "Idunn",
+    "grup": "asgard",
+    "residencia": "Asgard",
+    "domini": "Pomes de joventut",
+    "arxiu": "asgard-idunn"
+  },
+  {
+    "id": 8,
+    "nom": "Njord",
+    "grup": "vanir",
+    "residencia": "Noatun",
+    "domini": "Mar i prosperitat",
+    "arxiu": "vanir-njord"
+  },
+  {
+    "id": 9,
+    "nom": "Freyja",
+    "grup": "vanir",
+    "residencia": "Folkvangr",
+    "domini": "Amor i màgia",
+    "arxiu": "vanir-freyja"
+  },
+  {
+    "id": 10,
+    "nom": "Freyr",
+    "grup": "vanir",
+    "residencia": "Alfheim",
+    "domini": "Fertilitat i collites",
+    "arxiu": "vanir-freyr"
+  },
+  {
+    "id": 11,
+    "nom": "Nerthus",
+    "grup": "vanir",
+    "residencia": "Illa sagrada",
+    "domini": "Terra fèrtil i pau",
+    "arxiu": "vanir-nerthus"
+  },
+  {
+    "id": 12,
+    "nom": "Gerd",
+    "grup": "vanir",
+    "residencia": "Jotunheim",
+    "domini": "Abundància i cicles de la terra",
+    "arxiu": "vanir-gerd"
+  },
+  {
+    "id": 13,
+    "nom": "Skadi",
+    "grup": "vanir",
+    "residencia": "Thrymheim",
+    "domini": "Neu i muntanyes",
+    "arxiu": "vanir-skadi"
+  },
+  {
+    "id": 14,
+    "nom": "Kvasir",
+    "grup": "vanir",
+    "residencia": "Els nou regnes",
+    "domini": "Coneixement i poesia",
+    "arxiu": "vanir-kvasir"
+  }
+]

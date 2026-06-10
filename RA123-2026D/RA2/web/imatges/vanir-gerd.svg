@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#7a674c"/>
+  <circle cx="160" cy="76" r="24" fill="#efcfb5"/>
+  <path d="M126 144 C132 110, 188 110, 194 144 Z" fill="#c0a06b"/>
+  <circle cx="220" cy="116" r="12" fill="#e3d26f"/>
+  <text x="160" y="184" text-anchor="middle" fill="#ffffff" font-size="22" font-family="Arial">GERD</text>
+</svg>

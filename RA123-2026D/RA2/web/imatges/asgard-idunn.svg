@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <rect width="320" height="200" fill="#4a5f47"/>
+  <circle cx="160" cy="76" r="24" fill="#f0d1b6"/>
+  <path d="M126 144 C132 110, 188 110, 194 144 Z" fill="#94b177"/>
+  <circle cx="220" cy="92" r="12" fill="#c7d948"/>
+  <text x="160" y="184" text-anchor="middle" fill="#ffffff" font-size="22" font-family="Arial">IDUNN</text>
+</svg>
